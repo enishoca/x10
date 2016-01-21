@@ -212,30 +212,37 @@ describe("X10Command", function () {
     it("should create an command from a string", function () {
         command = new X10Command("allLightsOff");
         command.toObject().should.eql({"functionCode": 6});
+        command.toString().should.eql("allLightsOff");
     });
 
     it("should create an command from a JSON string", function () {
         command = new X10Command("{ \"functionCode\": 6 }");
         command.toObject().should.eql({"functionCode": 6});
+        command.toString().should.eql("allLightsOff");
     });
 
     it("should create an command from an object", function () {
         command = new X10Command({"functionCode": 6});
         command.toObject().should.eql({"functionCode": 6});
-        command = new X10Command({"functionCode":"allLightsOff"});
+        command.toString().should.eql("allLightsOff");
+        command = new X10Command({"functionCode": "allLightsOff"});
         command.toObject().should.eql({"functionCode": 6});
+        command.toString().should.eql("allLightsOff");
     });
 
     it("should create an command from an array", function () {
         command = new X10Command([6]);
         command.toObject().should.eql({"functionCode": 6});
+        command.toString().should.eql("allLightsOff");
         command = new X10Command(["allLightsOff"]);
         command.toObject().should.eql({"functionCode": 6});
+        command.toString().should.eql("allLightsOff");
     });
 
     it("should create an command from a number", function () {
         command = new X10Command(6);
         command.toObject().should.eql({"functionCode": 6});
+        command.toString().should.eql("allLightsOff");
     });
 
 });
