@@ -1,0 +1,35 @@
+{
+  "name": "x10",
+  "version": "1.0.0",
+  "description": "X10 Protocol library for working with addresses, house codes, unit codes and function codes.",
+  "main": "lib/x10.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithws/node-x10.git"
+  },
+  "keywords": [
+    "x10",
+    "home",
+    "automation",
+    "domotics",
+    "power",
+    "control",
+    "security"
+  ],
+  "author": "Keith Shaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keithws/node-x10/issues"
+  },
+  "homepage": "https://github.com/keithws/node-x10#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.1.1"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
