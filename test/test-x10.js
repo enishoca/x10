@@ -182,7 +182,7 @@ describe("X10Address", function () {
         address.toString().should.equal("P16");
     });
 
-    it("should have a proprty for the house code and unit code", function () {
+    it("should have a property for the house code and unit code", function () {
         var houseCode, unitCode;
         address = new X10Address("A1");
         houseCode = new X10HouseCode("A");
