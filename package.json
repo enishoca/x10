@@ -1,6 +1,6 @@
 {
   "name": "x10",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "X10 Protocol library for working with addresses, house codes, unit codes and function codes.",
   "main": "lib/x10.js",
   "scripts": {
