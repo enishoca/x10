@@ -215,6 +215,12 @@ describe("X10Command", function () {
         command.toString().should.eql("allLightsOff");
     });
 
+    it("should create an command from a string, case-insensitive", function () {
+        command = new X10Command("OFF");
+        command.toObject().should.eql({"functionCode": 3});
+        command.toString().should.eql("off");
+    });
+
     it("should create an command from a JSON string", function () {
         command = new X10Command("{ \"functionCode\": 6 }");
         command.toObject().should.eql({"functionCode": 6});
