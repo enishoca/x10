@@ -33,6 +33,19 @@ Used to pipe X10 events between different modules, like from the W800 to the CM1
 	command = new X10Command(6);
 	command.toString(); // "allLightsOff"
 	
+## Change Log
+
+*1.1.0 — January 23, 2016*
+
+* added test case and support for creating X10Commands from case-insensitive strings
+
+*1.0.1 — January 21, 2016*
+
+* Added toString method for X10Commands
+
+*1.0.0 — January 20, 2016*
+
+* initial version
 
 ## License
 
